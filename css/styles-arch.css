@@ -78,20 +78,16 @@ input {
 
 .container {
   width: 100%;
-  max-width: 320px;
-  padding-left: 16px;
-  padding-right: 16px;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   margin-left: auto;
   margin-right: auto;
-
-  outline: 1px solid lightskyblue;
-  outline-offset: -1px;
 }
 
 .header__container {
   display: flex;
-  align-items: center;
 }
 
 .hero {
@@ -232,8 +228,7 @@ input {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  /* color: var(--accent-main-color); */
-  color: tomato;
+  color: var(--accent-main-color);
 }
 
 .logo--dark-part {
@@ -343,27 +338,12 @@ button {
 }
 
 .header__logo {
-  margin-right: 120px;
-
-  padding: 16px 0;
-}
-
-.header__burger-btn {
-  margin-left: auto;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  fill: rgba(47, 47, 55, 1);
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+  margin-right: 76px;
+  padding: 25px 0;
 }
 
 .header__pagination-ul {
-  display: none;
-  /* display: flex; */
+  display: flex;
   gap: 40px;
 }
 
@@ -416,7 +396,6 @@ button {
 }
 
 .header__address {
-  display: none;
   margin-left: auto;
 }
 
@@ -428,16 +407,19 @@ button {
 .header__address-li {
 }
 
-/* .header__address-item {
+.header__address-item {
   display: block;
   padding: 24px 0;
 
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   font-style: normal;
 
   color: var(--dark-second-color);
 
   transition: color var(--anim-fast);
-} */
+}
 
 .header__address-item:hover,
 .header__address-item:focus {
