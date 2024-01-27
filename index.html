@@ -90,7 +90,7 @@
     </header>
     <main>
       <!-- ----------⚡ Hero Section---------- -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero__container">
           <h1 class="hero-title">
             Effective Solutions <br />
@@ -100,10 +100,10 @@
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- ----------⚡ Benefits (or Features) Section---------- -->
-      <!-- <section class="benefits">
+      <section class="benefits">
         <div class="container benefits__container">
           <h2 class="visually-hidden">Benefits</h2>
           <ul class="benefits__list">
@@ -160,22 +160,25 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- ----------⚡ Team Section---------- -->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container team__container">
           <h2 class="main_title">Our Team</h2>
           <ul class="team__list">
-           
             <li class="team__card">
               <img
+                srcset="
+                  ./images/team/team-01@1x.jpg 1x,
+                  ./images/team/team-01@2x.jpg 2x
+                "
                 src="./images/team-01.jpg"
                 alt="Photo of the Mark Guerrero"
                 width="264"
               />
               <div class="team__card-holder">
-                <h3 class="subtitle subtitle--center">Mark Guerrero</h3>
+                <h3 class="subtitle-team subtitle--center">Mark Guerrero</h3>
                 <p class="body-text body-text--center">Product Designer</p>
                 <ul class="social-media social-media--team">
                   <li class="social-media__li">
@@ -236,7 +239,7 @@
                 </ul>
               </div>
             </li>
-       
+
             <li class="team__card">
               <img
                 src="./images/team-02.jpg"
@@ -244,7 +247,7 @@
                 width="264"
               />
               <div class="team__card-holder">
-                <h3 class="subtitle subtitle--center">Tom Ford</h3>
+                <h3 class="subtitle-team subtitle--center">Tom Ford</h3>
                 <p class="body-text body-text--center">Frontend Developer</p>
                 <ul class="social-media social-media--team">
                   <li class="social-media__li">
@@ -305,7 +308,7 @@
                 </ul>
               </div>
             </li>
-    
+
             <li class="team__card">
               <img
                 src="./images/team-03.jpg"
@@ -313,7 +316,7 @@
                 width="264"
               />
               <div class="team__card-holder">
-                <h3 class="subtitle subtitle--center">Camila Garcia</h3>
+                <h3 class="subtitle-team subtitle--center">Camila Garcia</h3>
                 <p class="body-text body-text--center">Marketing</p>
                 <ul class="social-media social-media--team">
                   <li class="social-media__li">
@@ -374,7 +377,7 @@
                 </ul>
               </div>
             </li>
-     
+
             <li class="team__card">
               <img
                 class="test"
@@ -383,7 +386,7 @@
                 width="264"
               />
               <div class="team__card-holder">
-                <h3 class="subtitle subtitle--center">Daniel Wilson</h3>
+                <h3 class="subtitle-team subtitle--center">Daniel Wilson</h3>
                 <p class="body-text body-text--center">UI Designer</p>
                 <ul class="social-media social-media--team">
                   <li class="social-media__li">
@@ -446,20 +449,43 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- ----------⚡ Portfolio Section---------- -->
-      <!-- <section class="portfolio">
+      <section class="portfolio">
         <div class="container portfolio__container">
           <h2 class="main_title">Our Portfolio</h2>
           <ul class="portfolio__list">
             <li class="portfolio__card">
               <div class="portfolio__card-holder-top">
-                <img
-                  src="./images/portfolio_01.jpg"
-                  alt="read the qr code with phone"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-01@1x_lg.jpg 1x,
+                      ./images/portfolio/portfolio-01@2x_lg.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-01@1x_md.jpg 1x,
+                      ./images/portfolio/portfolio-01@2x_md.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-01@1x_sm.jpg 1x,
+                      ./images/portfolio/portfolio-01@2x_sm.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio_01.jpg"
+                    alt="read the qr code with phone"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio__overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -468,18 +494,41 @@
                 </p>
               </div>
               <div class="portfolio__card-holder-down">
-                <h3 class="subtitle">Banking App</h3>
+                <h3 class="subtitle-team">Banking App</h3>
                 <p class="body-text">App</p>
               </div>
             </li>
 
             <li class="portfolio__card">
               <div class="portfolio__card-holder-top">
-                <img
-                  src="./images/portfolio_02.jpg"
-                  alt="read the qr code with phone"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-02@1x_lg.jpg 1x,
+                      ./images/portfolio/portfolio-02@2x_lg.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-02@1x_md.jpg 1x,
+                      ./images/portfolio/portfolio-02@2x_md.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-02@1x_sm.jpg 1x,
+                      ./images/portfolio/portfolio-02@2x_sm.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio_02.jpg"
+                    alt="read the qr code with phone"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio__overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -488,18 +537,41 @@
                 </p>
               </div>
               <div class="portfolio__card-holder-down">
-                <h3 class="subtitle">Cashless Payment</h3>
+                <h3 class="subtitle-team">Cashless Payment</h3>
                 <p class="body-text">Marketing</p>
               </div>
             </li>
 
             <li class="portfolio__card">
               <div class="portfolio__card-holder-top">
-                <img
-                  src="./images/portfolio_03.jpg"
-                  alt="read the qr code with phone"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-03@1x_lg.jpg 1x,
+                      ./images/portfolio/portfolio-03@2x_lg.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-03@1x_md.jpg 1x,
+                      ./images/portfolio/portfolio-03@2x_md.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-03@1x_sm.jpg 1x,
+                      ./images/portfolio/portfolio-03@2x_sm.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio_03.jpg"
+                    alt="read the qr code with phone"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio__overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -508,18 +580,41 @@
                 </p>
               </div>
               <div class="portfolio__card-holder-down">
-                <h3 class="subtitle">Meditation App</h3>
+                <h3 class="subtitle-team">Meditation App</h3>
                 <p class="body-text">App</p>
               </div>
             </li>
 
             <li class="portfolio__card">
               <div class="portfolio__card-holder-top">
-                <img
-                  src="./images/portfolio_04.jpg"
-                  alt="read the qr code with phone"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-04@1x_lg.jpg 1x,
+                      ./images/portfolio/portfolio-04@2x_lg.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-04@1x_md.jpg 1x,
+                      ./images/portfolio/portfolio-04@2x_md.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-04@1x_sm.jpg 1x,
+                      ./images/portfolio/portfolio-04@2x_sm.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio_04.jpg"
+                    alt="read the qr code with phone"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio__overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -528,18 +623,41 @@
                 </p>
               </div>
               <div class="portfolio__card-holder-down">
-                <h3 class="subtitle">Taxi Service</h3>
+                <h3 class="subtitle-team">Taxi Service</h3>
                 <p class="body-text">Marketing</p>
               </div>
             </li>
 
             <li class="portfolio__card">
               <div class="portfolio__card-holder-top">
-                <img
-                  src="./images/portfolio_05.jpg"
-                  alt="read the qr code with phone"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-05@1x_lg.jpg 1x,
+                      ./images/portfolio/portfolio-05@2x_lg.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-05@1x_md.jpg 1x,
+                      ./images/portfolio/portfolio-05@2x_md.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-05@1x_sm.jpg 1x,
+                      ./images/portfolio/portfolio-05@2x_sm.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio_05.jpg"
+                    alt="read the qr code with phone"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio__overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -548,18 +666,41 @@
                 </p>
               </div>
               <div class="portfolio__card-holder-down">
-                <h3 class="subtitle">Screen Illustrations</h3>
+                <h3 class="subtitle-team">Screen Illustrations</h3>
                 <p class="body-text">Design</p>
               </div>
             </li>
 
             <li class="portfolio__card">
               <div class="portfolio__card-holder-top">
-                <img
-                  src="./images/portfolio_06.jpg"
-                  alt="read the qr code with phone"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-06@1x_lg.jpg 1x,
+                      ./images/portfolio/portfolio-06@2x_lg.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-06@1x_md.jpg 1x,
+                      ./images/portfolio/portfolio-06@2x_md.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-06@1x_sm.jpg 1x,
+                      ./images/portfolio/portfolio-06@2x_sm.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio_06.jpg"
+                    alt="read the qr code with phone"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio__overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -568,17 +709,17 @@
                 </p>
               </div>
               <div class="portfolio__card-holder-down">
-                <h3 class="subtitle">Online Courses</h3>
+                <h3 class="subtitle-team">Online Courses</h3>
                 <p class="body-text">Marketing</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- ----------⚡ Footer section---------- -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="footer__left-side">
           <a class="logo footer__logo" href="./index.html"
@@ -651,12 +792,9 @@
           </ul>
         </div>
 
-
         <div class="footer__right-side">
           <p class="body-text body-text--white body-text--bold">Subscribe</p>
           <form class="footer__form">
-
-
             <label class="footer__form-label">
               <input
                 class="footer__form-input"
@@ -675,7 +813,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- ----------🔎 Modal window---------- -->
     <!-- <div class="backdrop is-hidden" data-modal>
