@@ -303,6 +303,12 @@ button {
   gap: 16px;
 }
 
+/* .social-media--mobilMenu {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+} */
+
 .social-media__link {
   width: 40px;
   height: 40px;

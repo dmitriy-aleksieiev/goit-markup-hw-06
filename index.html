@@ -87,6 +87,106 @@
           </svg>
         </button>
       </div>
+
+      <!-- 🔎 mobilMenu -->
+      <!--  data-modal-close 97   data-menu 94-->
+
+      <div class="mobilMenu is-hidden">
+        <button class="modal__btn-x modal__btn-x--white" type="button">
+          <svg class="modal__btn-x-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+
+        <nav>
+          <ul class="mobilMenu__pagination-ul">
+            <li class="mobilMenu__pagination-li">
+              <a class="mobilMenu__pagination-item" href="">Studio</a>
+            </li>
+            <li class="mobilMenu__pagination-li">
+              <a class="mobilMenu__pagination-item" href="">Portfolio</a>
+            </li>
+            <li class="mobilMenu__pagination-li">
+              <a class="mobilMenu__pagination-item" href="">Contacts</a>
+            </li>
+          </ul>
+
+          <address class="mobilMenu__address">
+            <ul class="mobilMenu__address-ul">
+              <li class="mobilMenu__address-li">
+                <a
+                  class="mobilMenu__address-item"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobilMenu__address-li">
+                <a class="mobilMenu__address-item" href="tel:+110001111111"
+                  >+11 (000) 111-11-12</a
+                >
+              </li>
+            </ul>
+          </address>
+        </nav>
+
+        <ul class="social-media--mobilMenu">
+          <li class="social-media__li">
+            <a
+              class="social-media__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="instagram"
+            >
+              <svg class="social-media__icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-media__li">
+            <a
+              class="social-media__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="twitter"
+            >
+              <svg class="social-media__icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-media__li">
+            <a
+              class="social-media__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="facebook"
+            >
+              <svg class="social-media__icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-media__li">
+            <a
+              class="social-media__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="linkedin"
+            >
+              <svg class="social-media__icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <!-- ----------⚡ Hero Section---------- -->
@@ -242,6 +342,10 @@
 
             <li class="team__card">
               <img
+                srcset="
+                  ./images/team/team-02@1x.jpg 1x,
+                  ./images/team/team-02@2x.jpg 2x
+                "
                 src="./images/team-02.jpg"
                 alt="Photo of the Tom Ford"
                 width="264"
@@ -311,6 +415,10 @@
 
             <li class="team__card">
               <img
+                srcset="
+                  ./images/team/team-03@1x.jpg 1x,
+                  ./images/team/team-03@2x.jpg 2x
+                "
                 src="./images/team-03.jpg"
                 alt="Photo of the Camila Garcia"
                 width="264"
@@ -380,7 +488,10 @@
 
             <li class="team__card">
               <img
-                class="test"
+                srcset="
+                  ./images/team/team-04@1x.jpg 1x,
+                  ./images/team/team-04@2x.jpg 2x
+                "
                 src="./images/team-04.jpg"
                 alt="Photo of the Daniel Wilson"
                 width="264"
@@ -816,6 +927,101 @@
     </footer>
 
     <!-- ----------🔎 Modal window---------- -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btn-x" type="button" data-modal-close>
+          <svg class="modal__btn-x-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <p class="modal__title">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form class="modal__form">
+          <div class="modal__field">
+            <label for="user-name" class="modal__label">Name</label>
+            <div class="modal__input-wrap">
+              <input
+                type="text"
+                class="modal__input"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="modal__input-icon" width="18" height="24">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__field">
+            <label for="user-phone" class="modal__label">Phone</label>
+            <div class="modal__input-wrap">
+              <input
+                type="tel"
+                class="modal__input"
+                name="user-phone"
+                id="user-phone"
+              />
+              <svg class="modal__input-icon" width="18" height="24">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__field">
+            <label for="user-email" class="modal__label">Email</label>
+            <div class="modal__input-wrap">
+              <input
+                type="text"
+                class="modal__input"
+                name="user-email"
+                id="user-email"
+              />
+              <svg class="modal__input-icon" width="18" height="24">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal__field--textarea">
+            <label for="user-comment" class="modal__label">Comment</label>
+
+            <textarea
+              class="modal__input modal__input--textarea"
+              name="user-comment"
+              id="user-comment"
+              cols="30"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="modal__checkbox-policy">
+            <input
+              class="modal__checkbox-policy-input visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+
+            <label class="modal__checkbox-policy-label" for="user-privacy">
+              <span class="modal__checkbox-span">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#check"></use>
+                </svg>
+              </span>
+
+              I accept the terms and conditions of the
+              <a class="modal__checkbox-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button type="button" class="button">Send</button>
+        </form>
+      </div>
+    </div>
+
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
 
@@ -920,5 +1126,6 @@
 
     <!-- ----------💎 SCRIPT---------- -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

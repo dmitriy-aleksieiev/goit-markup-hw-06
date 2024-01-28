@@ -36,6 +36,7 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
 
 ul {
@@ -718,8 +719,8 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   flex-shrink: 0;
   border-radius: 4px;
   background: #fcfcfc;
@@ -903,4 +904,81 @@ button {
 
 .social-media__icon {
   fill: var(--light-main-color);
+}
+
+/* 🔎 modalMenu */
+
+.mobilMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: #ffffff;
+
+  padding: 72px 16px 40px 16px;
+}
+
+.modal__btn-x--white {
+  background-color: transparent;
+}
+
+.mobilMenu__pagination-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  margin-bottom: 168px;
+}
+
+.mobilMenu__pagination-item {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+
+  color: var(--dark-main-color);
+}
+
+.mobilMenu__pagination-item:hover,
+.mobilMenu__pagination-item:focus,
+.mobilMenu__address-li:hover,
+.mobilMenu__address-li:focus {
+  color: var(--accent-second-color);
+}
+
+.mobilMenu__address-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  margin-bottom: 48px;
+}
+
+.mobilMenu__address-li {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: var(--dark-main-color);
+}
+
+.social-media--mobilMenu {
+  display: flex;
+  gap: 40px;
+}
+
+.mobilMenu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobilMenu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }

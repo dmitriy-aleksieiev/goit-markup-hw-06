@@ -151,6 +151,11 @@
     margin: 0;
     align-items: flex-start;
   }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
 }
 /* ⭐⭐⭐ */
 
@@ -300,12 +305,6 @@
   .footer {
     padding: 100px 0;
   }
-
-  /* .footer__container {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-  } */
 
   .footer__left-side {
     margin-right: 120px;
